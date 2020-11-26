@@ -1,0 +1,21 @@
+tr,
+td,
+th {
+  border: 1px solid rgb(199, 199, 199);
+  color: rgb(117, 115, 115);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.firstColumn::first-letter {
+  text-transform: uppercase;
+}

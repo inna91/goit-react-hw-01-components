@@ -1,0 +1,8 @@
+.container {
+  background-color: white;
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-between;
+  align-items: center;
+}

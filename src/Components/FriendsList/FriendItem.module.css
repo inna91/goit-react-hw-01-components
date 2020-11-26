@@ -1,0 +1,35 @@
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  padding: 4px 10px;
+  align-items: center;
+}
+
+.span {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.online {
+  composes: span;
+  background-color: green;
+}
+
+.offline {
+  composes: span;
+  background-color: red;
+}
+
+.img {
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
