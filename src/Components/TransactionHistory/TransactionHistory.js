@@ -14,8 +14,7 @@ function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map(item => {
-          const { id, type, amount, currency } = item;
+        {items.map(({ id, type, amount, currency }) => {
           return (
             <TransactionItem
               key={id}

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 import defaultImage from './default.jpg';
 
-const Profile = ({ avatar = defaultImage, name, tag, location, stats }) => {
+const Profile = ({ avatar, name, tag, location, stats }) => {
   return (
     <div className={s.container}>
       <div className={s.wrapper}>
@@ -28,6 +28,12 @@ const Profile = ({ avatar = defaultImage, name, tag, location, stats }) => {
       </ul>
     </div>
   );
+};
+
+Profile.defaultProps = {
+  name: 'unknown',
+  tag: 'unknown',
+  avatar: defaultImage,
 };
 
 Profile.propTypes = {
